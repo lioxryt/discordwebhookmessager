@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Webhook Sender</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Discord Webhook Sender</h1>
+      <div class="settings">
+        <h2>Settings</h2>
+        <form>
+          <div class="form-group">
+            <label for="webhookUrl">Webhook URL:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="webhookUrl"
+              placeholder="Enter webhook URL"
+            />
+          </div>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="username"
+              placeholder="Enter username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="avatarUrl">Profile picture:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="avatarUrl"
+              placeholder="Enter avatar URL"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+      </div>
+      <div class="settings-button">
+        <div class="user-info">
+          <img class="pfp" src="" />
+          <span class="username"></span>
+        </div>
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
+    <div class="messages">
+      <form>
+        <textarea
+          id="message"
+          name="message"
+          oninput="autoResize(this); moveWrittenLinesUp();"
+          rows="20"
+          required
+        ></textarea>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

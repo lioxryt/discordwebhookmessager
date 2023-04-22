@@ -1,0 +1,132 @@
+body {
+    background-color: #36393f;
+    color: #dcddde;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #36393f;
+    border-radius: 10px;
+  }
+
+  .settings {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: #2f3136;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+
+  .settings.show {
+    display: block;
+  }
+
+  .settings h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .settings form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .settings .form-group {
+    margin-bottom: 10px;
+  }
+
+  .settings label {
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .settings input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .settings .btn {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+
+  .settings-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #7289da;
+    box-shadow: 0 0 10px rgba 0 1px 3px 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  .pfp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+  }
+
+  span{
+    position: absolute;
+    left: 120%;
+    top: -30%;
+    font-size: xx-large;
+  }
+
+  .btn-primary {
+    background-color: #7289da;
+    border-color: #7289da;
+  }
+
+  .btn-primary:hover {
+    background-color: #677bc4;
+    border-color: #677bc4;
+  }
+
+  form {
+    background-color: #36393f;
+    padding: 20px;
+  }
+
+  .messages {
+    position: absolute;
+    bottom: 1%;
+    left: 15%;
+    width: 85%;
+  }
+
+  #message {
+    resize: none; /* disable manual resizing */
+    height: 34px;
+    min-height: 34px;
+    max-height: 465px;
+    background-color: transparent;
+    resize: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    width: 100%;
+    color: var(--text-normal);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
